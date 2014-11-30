@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Wrapping Text to Fit Shaped Containers With Css | ~indexOf</title>
+  <title>Wrapping text to fit shaped containers with CSS | ~indexOf</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="With CSS, you can make all kinds of shapes, but if you try to putany text inside even a simple non-rectangular shape, you can run into problems.The text will not wrap to fit inside the container.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Wrapping Text to Fit Shaped Containers With Css">
+<meta property="og:title" content="Wrapping text to fit shaped containers with CSS">
 <meta property="og:url" content="http://skeate.github.io/2014/11/29/wrapping-text-to-fit-shaped-containers-with-css/">
 <meta property="og:site_name" content="~indexOf">
 <meta property="og:description" content="With CSS, you can make all kinds of shapes, but if you try to putany text inside even a simple non-rectangular shape, you can run into problems.The text will not wrap to fit inside the container.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Wrapping Text to Fit Shaped Containers With Css">
+<meta name="twitter:title" content="Wrapping text to fit shaped containers with CSS">
 <meta name="twitter:description" content="With CSS, you can make all kinds of shapes, but if you try to putany text inside even a simple non-rectangular shape, you can run into problems.The text will not wrap to fit inside the container.">
 
   
@@ -79,7 +79,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Wrapping Text to Fit Shaped Containers With Css
+      Wrapping text to fit shaped containers with CSS
     </h1>
   
 
@@ -97,7 +97,7 @@
 
 <p>Gorgeous. But how does this help with the original problem? This handles<br>wrapping outside a shape. There’s no <code>shape-inside</code> (<a href="http://dev.w3.org/csswg/css-shapes-2/#shape-inside-property" target="_blank" rel="external">yet</a>).</p>
 <p>Until that arrives, we can still manage this. The trick lies in inverting the<br><code>shape-outside</code>. In other words, make the shape a polygon, with two points at<br>(0,0) and (0, 100%), and the rest following the contour of the desired shape.<br>It’s not perfect (for circles at least) but it’s good enough, since text would<br>never be perfect anyway.</p>
-<p>One caveat: this only works with floated elements. We can float the <code>::before</code><br>pseudoelement just fine, but if we try to float the <code>::after</code>, it doesn’t look<br>right. You can hover over the circle to color the pseudoelements, to make it<br>more obvious what’s happening.</p>
+<p>One caveat: this only works with floated elements. We can float the <code>::before</code><br>pseudoelement just fine, but if we try to float the <code>::after</code>, it doesn’t look<br>right. See the example below &mdash; you can hover over the circle to color the<br>pseudoelements, to make it more obvious what’s happening.</p>
 <iframe id="cp_embed_gbarrN" src="//codepen.io/skeate/embed/gbarrN?height=300&theme-id=undefined&slug-hash=gbarrN&default-tab=result" scrolling="no" frameborder="0" height="300" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe>
 
 <p>Unfortunately the only way I’ve found around it so far is double-wrapping the<br>circle element, so you can use both <code>::before</code>s. Forgiveable, I suppose, but I<br>would like a single-element solution.</p>
@@ -177,7 +177,7 @@
       <ul>
         
           <li>
-            <a href="/2014/11/29/wrapping-text-to-fit-shaped-containers-with-css/">Wrapping Text to Fit Shaped Containers With Css</a>
+            <a href="/2014/11/29/wrapping-text-to-fit-shaped-containers-with-css/">Wrapping text to fit shaped containers with CSS</a>
           </li>
         
       </ul>
